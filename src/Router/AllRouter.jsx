@@ -38,7 +38,7 @@ const router = createBrowserRouter([
         },
         {
           path: "/shirtDetails/:shirtId",
-        element: <ShirtDetail></ShirtDetail>,
+          element: <ShirtDetail></ShirtDetail>,
           loader: () => fetch("/Products.json")
         },
         {
@@ -47,7 +47,8 @@ const router = createBrowserRouter([
         },
         {
           path: "/Dashboard",
-          element:<PrivetRouter><Dashboard></Dashboard></PrivetRouter> 
+          element:<PrivetRouter><Dashboard></Dashboard></PrivetRouter>,
+          loader: () => fetch("/Products.json")
         },
         {
           path: "/Contact",

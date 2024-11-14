@@ -1,29 +1,30 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import { productContext } from "../../layout/Root";
 
 const ShirtDetail = () => {
 
   const shirtData = useLoaderData();
   const { shirtId } = useParams();
-  const [clothItem, setClothItem] = useState([]);
-
-  console.log(shirtData);
-
+  const [clothItem, setClothItem] = useContext(productContext);
+  const [clothItemDetails,setClothItemDetails] = useState([]);
+ 
   useEffect(() => {
     const shirtItem = shirtData.find((item) => item.id == shirtId);
-    setClothItem(shirtItem);
+    setClothItemDetails(shirtItem);
+
   }, [shirtData, shirtId]);
 
-  const {image,price} = clothItem;
+  const {image,price} = clothItemDetails;
 
 
   return (
-    <div>
+    <div className="w-11/12 mx-auto">
       <div className="card card-side bg-base-100 shadow-xl">
         <figure>
           <img
             src={image}
-            alt="Movie"
+            alt="cloth"
           />
         </figure>
         <div className="card-body">
