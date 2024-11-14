@@ -1,0 +1,147 @@
+[
+    {
+      "id": 1,
+      "name": "Graphic T-Shirt",
+      "category": "T-shirts",
+      "image": "https://d2m144zuam4eta.cloudfront.net/wp-content/uploads/2024/05/CMTHP-COD01-Dark-Gray-400x400.webp",
+      "description": "Comfortable graphic t-shirt with unique design.",
+      "price": 15.99,
+      "specification": "100% cotton, available in multiple sizes",
+      "size": ["S", "M", "L", "XL"],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "id": 2,
+      "name": "Plain White T-Shirt",
+      "category": "T-shirts",
+      "image": "https://d2m144zuam4eta.cloudfront.net/wp-content/uploads/2024/04/CMTHP-COD18-SORRELL-BROWN-400x400.webp",
+      "description": "Classic plain white t-shirt, soft and breathable.",
+      "price": 12.99,
+      "specification": "100% cotton, unisex fit",
+      "size": ["S", "M", "L", "XL", "XXL"],
+      "availability": true,
+      "rating": 4.2
+    },
+    {
+      "id": 3,
+      "name": "V-Neck T-Shirt",
+      "category": "T-shirts",
+      "image": "https://d2m144zuam4eta.cloudfront.net/wp-content/uploads/2024/04/CMTHP-COD33-SORRELL-BROWN-400x400.webp",
+      "description": "Stylish v-neck t-shirt perfect for casual outings.",
+      "price": 17.99,
+      "specification": "Blend of cotton and polyester, slim fit",
+      "size": ["M", "L", "XL"],
+      "availability": true,
+      "rating": 4.4
+    },
+    {
+      "id": 4,
+      "name": "Classic Cap",
+      "category": "Caps",
+      "image": "https://d2m144zuam4eta.cloudfront.net/wp-content/uploads/2024/08/ACVI-093-400x400.webp",
+      "description": "Adjustable classic cap for sunny days.",
+      "price": 9.99,
+      "specification": "100% cotton, one size fits all",
+      "size": ["One Size"],
+      "availability": true,
+      "rating": 4.3
+    },
+    {
+      "id": 5,
+      "name": "Snapback Cap",
+      "category": "Caps",
+      "image": "https://d2m144zuam4eta.cloudfront.net/wp-content/uploads/2024/08/ACVI-145-400x400.webp",
+      "description": "Trendy snapback cap for modern style.",
+      "price": 14.99,
+      "specification": "Adjustable back strap, durable material",
+      "size": ["One Size"],
+      "availability": false,
+      "rating": 4.7
+    },
+    {
+      "id": 6,
+      "name": "Mesh Trucker Cap",
+      "category": "Caps",
+      "image": "https://d2m144zuam4eta.cloudfront.net/wp-content/uploads/2024/05/A034303-400x400.webp",
+      "description": "Breathable mesh cap suitable for outdoor activities.",
+      "price": 11.49,
+      "specification": "Mesh panels, adjustable closure",
+      "size": ["One Size"],
+      "availability": true,
+      "rating": 4.1
+    },
+    {
+      "id": 7,
+      "name": "Traditional Panjabi",
+      "category": "Panjabi",
+      "image": "https://d2m144zuam4eta.cloudfront.net/wp-content/uploads/2024/08/Panjabi-DSC04688-400x400.webp",
+      "description": "Elegant traditional panjabi for festive occasions.",
+      "price": 25.99,
+      "specification": "Cotton fabric, detailed embroidery",
+      "size": ["M", "L", "XL", "XXL"],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "id": 8,
+      "name": "Casual Panjabi",
+      "category": "Panjabi",
+      "image": "https://d2m144zuam4eta.cloudfront.net/wp-content/uploads/2024/08/Panjabi-DSC04708-400x400.webp",
+      "description": "Simple casual panjabi for everyday wear.",
+      "price": 20.99,
+      "specification": "Breathable cotton, relaxed fit",
+      "size": ["S", "M", "L"],
+      "availability": false,
+      "rating": 4.0
+    },
+    {
+      "id": 9,
+      "name": "Designer Panjabi",
+      "category": "Panjabi",
+      "image": "https://d2m144zuam4eta.cloudfront.net/wp-content/uploads/2024/08/Panjabi-DSC04743-400x400.webp",
+      "description": "Designer panjabi with unique patterns.",
+      "price": 35.49,
+      "specification": "Premium cotton, modern fit",
+      "size": ["L", "XL", "XXL"],
+      "availability": true,
+      "rating": 4.8
+    },
+    {
+      "id": 10,
+      "name": "Vintage T-Shirt",
+      "category": "T-shirts",
+      "image": "https://d2m144zuam4eta.cloudfront.net/wp-content/uploads/2024/04/CMTHP-COD283-LAVENDER-400x400.webp",
+      "description": "Vintage style t-shirt with a retro vibe.",
+      "price": 16.99,
+      "specification": "Cotton-poly blend, classic fit",
+      "size": ["M", "L", "XL"],
+      "availability": true,
+      "rating": 4.5
+    },
+    {
+      "id": 11,
+      "name": "Sports Cap",
+      "category": "Caps",
+      "image": "https://d2m144zuam4eta.cloudfront.net/wp-content/uploads/2024/03/ACVI-104-400x400.webp",
+      "description": "Lightweight sports cap ideal for workouts.",
+      "price": 13.99,
+      "specification": "Moisture-wicking fabric, adjustable strap",
+      "size": ["One Size"],
+      "availability": true,
+      "rating": 4.6
+    },
+    {
+      "id": 12,
+      "name": "Formal Panjabi",
+      "category": "Panjabi",
+      "image": "https://d2m144zuam4eta.cloudfront.net/wp-content/uploads/2024/08/Panjabi-DSC04762-400x400.webp",
+      "description": "Formal panjabi suitable for events and gatherings.",
+      "price": 28.99,
+      "specification": "Silk blend, fine detailing",
+      "size": ["M", "L", "XL"],
+      "availability": true,
+      "rating": 4.7
+    }
+  ]
+  
