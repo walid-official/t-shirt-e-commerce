@@ -3,9 +3,20 @@ import { createBrowserRouter} from "react-router-dom";
 import Root from '../layout/Root';
 import Home from '../pages/Home';
 import ProductDetails from '../components/Products/ProductDetails';
+import About from '../pages/About';
+import Dashboard from '../pages/Dashboard';
+import Contact from '../pages/Contact';
+import PrivetRouter from '../components/PrivetRouter/PrivetRouter';
+
+import ErrorPage from '../pages/ErrorPage';
+import ShirtDetail from '../components/shirtDetails/ShirtDetail';
+
+
+
 const router = createBrowserRouter([
     {
       path: "/",
+      errorElement: <ErrorPage></ErrorPage>,
       element: <Root></Root>,
       children: [
         {
@@ -16,14 +27,31 @@ const router = createBrowserRouter([
             {
               path: "/",
               element: <ProductDetails></ProductDetails>,
-              loader: () => fetch("../Products.json")
+              loader: () => fetch("/Products.json")
             },
             {
               path: "/productDetails/:productId",
               element: <ProductDetails></ProductDetails>,
-              loader: () => fetch("../Products.json")
+              loader: () => fetch("/Products.json")
             }
           ]
+        },
+        {
+          path: "/shirtDetails/:shirtId",
+        element: <ShirtDetail></ShirtDetail>,
+          loader: () => fetch("/Products.json")
+        },
+        {
+          path: "/About",
+          element: <About></About>
+        },
+        {
+          path: "/Dashboard",
+          element:<PrivetRouter><Dashboard></Dashboard></PrivetRouter> 
+        },
+        {
+          path: "/Contact",
+          element: <Contact></Contact>
         }
       ]
     },

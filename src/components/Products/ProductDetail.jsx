@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const ProductDetail = ({ products }) => {
   const { id, image,name, price } = products;
@@ -19,7 +20,7 @@ const ProductDetail = ({ products }) => {
           <p className="py-3">$ {price}.00</p>
           <div className="card-actions justify-start">
             <div className="btn">Add to cart</div>
-            <div className="btn">view Details</div>
+            <NavLink to={`/shirtDetails/${id}`} className="btn">view Details</NavLink>
           </div>
         </div>
       </div>

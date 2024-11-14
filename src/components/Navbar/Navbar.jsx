@@ -1,10 +1,70 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Logo from "../../assets/images/logo.png";
 import Modal from "../Modal/Modal";
 import RegisterModal from "../Modal/RegisterModal";
 import Menu from "../Menu/Menu";
 import { FaBarsStaggered } from "react-icons/fa6";
+import { MdClose } from "react-icons/md";
+import { authContext } from "../AuthProvider/AuthProvider";
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
+
+const {signInWithGoogle,signInWithFacebook,signInWithGithub,signInWithTwitter,user,signOutUser} = useContext(authContext);
+
+
+const handleSignOut = () => {
+  signOutUser()
+  .then(() => {
+    console.log("User is Signed out");
+    navigate("/SignIn")
+  })
+
+}
+
+const handleTwitterSignIn = () => {
+  signInWithTwitter()
+  .then(() => {
+    console.log("Twitter sign in successful");
+  })
+  .catch((error) => {
+    console.log("error Twitter", error);
+  })
+}
+
+ const handleGithubSignIn = () => {
+  signInWithGithub()
+  .then(() => {
+    console.log("Github sign in successful");
+  })
+  .catch((error) => {
+    console.log("error Github", error);
+  })
+ }
+
+
+const handleGoogleSignIn = () => {
+  signInWithGoogle()
+  .then(() => {
+    console.log("Google sign in successful");
+  })
+  .catch((error) => {
+    console.log("error", error);
+  })
+}
+
+const handleFacebookSignIn = () => {
+  signInWithFacebook()
+  .then(() => {
+    console.log("Facebook sign in successful");
+  })
+  .catch((error) => {
+    console.log("error Facebook", error);
+  })
+}
+
+
+
   const [menu, setMenu] = useState(false);
   useEffect(() => {
     if (menu) {
@@ -13,8 +73,12 @@ const Navbar = () => {
       document.body.classList.remove("overflow-hidden");
     }
   }, [menu]);
+
+
+
+
   return (
-    <div className="w-11/12 mx-auto py-2 overflow-hidden">
+    <div className="w-11/12 mx-auto py-2">
       <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
@@ -59,6 +123,13 @@ const Navbar = () => {
           </label>
         </div>
         <div className="navbar-end space-x-4">
+
+          <div className="">
+            <span>{user?.email}</span>
+          </div>
+          {
+            user ? <button onClick={handleSignOut} className="btn">Sign Out</button> : <Link className="btn" onClick={() => document.getElementById("my_modal_4").showModal()}>Sign In</Link>
+          }
           <div className="dropdown dropdown-end">
             <div
               tabIndex={0}
@@ -102,13 +173,18 @@ const Navbar = () => {
             <FaBarsStaggered></FaBarsStaggered>
           </button>
           <div
-           className={`bg-slate-400 p-8 z-50 absolute right-0 top-0 duration-1000 w-80 h-full ${
-            menu ? "translate-x-0" : "translate-x-full"
+           className={`bg-slate-400 p-6 z-10 absolute right-0 top-0 duration-1000 w-80 h-full ${
+            menu ? "-left-5" : "-left-full"
           }`}
           >
-            <div className="">
+            <div className="text-right">
+              <button onClick={() => setMenu(!menu)} className={`btn bg-white`}>
+                <MdClose></MdClose>
+              </button>
+            </div>  
+            <div className="space-y-4 mt-8">
               <button
-                className="btn bg-[#d2aa6d] text-white"
+                className="btn w-full bg-[#062246] text-white"
                 onClick={() =>
                   document.getElementById("my_modal_4").showModal()
                 }
@@ -117,13 +193,17 @@ const Navbar = () => {
               </button>
 
               <button
-                className="btn bg-[#d2aa6d] text-white"
+                className="btn w-full bg-[#062246] text-white"
                 onClick={() =>
                   document.getElementById("my_modal_5").showModal()
                 }
               >
                 Register
               </button>
+              <button   onClick={handleGoogleSignIn} className="btn w-full bg-[#062246] text-white">Login with Google</button>
+              <button   onClick={handleFacebookSignIn} className="btn w-full bg-[#062246] text-white">Login with Facebook</button>
+              <button   onClick={handleTwitterSignIn} className="btn w-full bg-[#062246] text-white">Login with Twitter</button>
+              <button   onClick={handleGithubSignIn}  className="btn w-full bg-[#062246] text-white">Login with Github</button>
             </div>
           </div>
 
