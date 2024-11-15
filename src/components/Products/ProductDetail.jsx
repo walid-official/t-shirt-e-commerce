@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { cartContext, productContext } from "../../layout/Root";
+import toast from "react-hot-toast";
 
 const ProductDetail = ({ products }) => {
   const { id, image, name, price } = products;
@@ -10,13 +11,14 @@ const ProductDetail = ({ products }) => {
   // Update the function to add the product to the existing array of cart items
   const handleToCart = (product) => {
     setCarts((prevCarts) => [...prevCarts, product]); // Append new product to the array
+    toast.success('Successfully added in cart!');
     setClothItem(clothItem + 1);
     setTotalPrice(totalPrice + product.price)
   };
 
   return (
     <div>
-      <div className=" bg-base-100 w-full shadow-xl">
+      <div className=" bg-base-100 w-full shadow-xl hover:shadow-2xl">
         <figure>
           <img src={image} alt={name} />
         </figure>

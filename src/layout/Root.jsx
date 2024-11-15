@@ -2,6 +2,7 @@ import React, { createContext, useState } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import { Outlet } from "react-router-dom";
 import Footer from "../components/Footer/Footer";
+import { Toaster } from 'react-hot-toast';
 export const productContext = createContext();
 export const cartContext = createContext();
 
@@ -20,6 +21,7 @@ const Root = () => {
           </div>
           <Footer></Footer>
         </div>
+        <Toaster/>
       </cartContext.Provider>
     </productContext.Provider>
   );
