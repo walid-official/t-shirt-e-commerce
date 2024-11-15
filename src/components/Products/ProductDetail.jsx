@@ -16,16 +16,16 @@ const ProductDetail = ({ products }) => {
 
   return (
     <div>
-      <div className="card bg-base-100 w-full shadow-xl">
+      <div className=" bg-base-100 w-full shadow-xl">
         <figure>
           <img src={image} alt={name} />
         </figure>
-        <div className="card-body">
-          <h2 className="card-title">{name}</h2>
-          <p className="py-3">$ {price}.00</p>
-          <div className="card-actions justify-start">
-            <button onClick={() => handleToCart(products)} className="btn">Add to cart</button>
-            <NavLink to={`/shirtDetails/${id}`} className="btn">View Details</NavLink>
+        <div className="p-3">
+          <h2 className="card-title center">{name}</h2>
+          <p className="py-3 center">$ {price}</p>
+          <div className="card-actions justify-center">
+            <button onClick={() => handleToCart(products)} className=" w-full bg-transparent border px-6 py-2 hover:bg-[#4d5154] text-[#4d5154] duration-300 hover:text-white">Add to cart</button>
+            <NavLink to={`/shirtDetails/${id}`} className=" w-full text-center bg-transparent border px-6 py-2 hover:bg-[#4d5154] text-[#4d5154] duration-300 hover:text-white">View Details</NavLink>
           </div>
         </div>
       </div>

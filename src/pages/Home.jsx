@@ -11,9 +11,13 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <ProductTitle></ProductTitle>
-            <div className="flex gap-6 w-11/12 mx-auto">
-                <Sidebar categories={categories}></Sidebar>
-                <Outlet></Outlet>
+            <div className="lg:flex gap-6 w-11/12 mx-auto">
+                <div className="lg:w-[20%] md:w-[30%]">
+                    <Sidebar categories={categories}></Sidebar>
+                </div>
+                <div className="lg:w-[80%] md:[70%]">
+                    <Outlet></Outlet>
+                </div>    
             </div>
         </div>
     );

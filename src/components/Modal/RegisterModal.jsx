@@ -25,8 +25,6 @@ const RegisterModal = () => {
     .catch((error) => {
       console.log(error.message);
     })
-
-
   }
 
   return (

@@ -10,5 +10,17 @@
     {
       "id": 3,
       "category": "Panjabi"
+    },
+    {
+      "id": 4,
+      "category": "Accessories"
+    },
+    {
+      "id": 5,
+      "category": "Pants"
+    },
+    {
+      "id": 6,
+      "category": "Winter Collections"
     }
   ]

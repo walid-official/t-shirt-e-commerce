@@ -6,7 +6,6 @@ const ShirtDetail = () => {
 
   const shirtData = useLoaderData();
   const { shirtId } = useParams();
-  const [clothItem, setClothItem] = useContext(productContext);
   const [clothItemDetails,setClothItemDetails] = useState([]);
  
   useEffect(() => {

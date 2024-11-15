@@ -142,6 +142,152 @@
       "size": ["M", "L", "XL"],
       "availability": true,
       "rating": 4.7
-    }
+    },
+    
+      {
+        "id": 13,
+        "name": "Woolen Sweater",
+        "category": "Winter Collections",
+        "image": "https://d2m144zuam4eta.cloudfront.net/wp-content/uploads/2024/11/CMHOPO-BLACK-D06-1-400x400.webp",
+        "description": "Cozy woolen sweater perfect for cold weather.",
+        "price": 34.99,
+        "specification": "100% wool, warm and breathable",
+        "size": ["S", "M", "L", "XL"],
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "id": 14,
+        "name": "Fleece Jacket",
+        "category": "Winter Collections",
+        "image": "https://d2m144zuam4eta.cloudfront.net/wp-content/uploads/2024/11/CMHOPO-NAVY-D05-1-400x400.webp",
+        "description": "Soft fleece jacket for maximum comfort.",
+        "price": 49.99,
+        "specification": "Fleece material, full zipper closure",
+        "size": ["M", "L", "XL", "XXL"],
+        "availability": true,
+        "rating": 4.5
+      },
+      {
+        "id": 15,
+        "name": "Winter Scarf",
+        "category": "Winter Collections",
+        "image": "https://d2m144zuam4eta.cloudfront.net/wp-content/uploads/2024/11/CMHOPO-BLACK-D04-1-400x400.webp",
+        "description": "Stylish scarf to keep you warm.",
+        "price": 14.49,
+        "specification": "Knitted fabric, various colors available",
+        "size": ["One Size"],
+        "availability": true,
+        "rating": 4.3
+      },
+      {
+        "id": 16,
+        "name": "Slim Fit Jeans",
+        "category": "Pants",
+        "image": "https://d2m144zuam4eta.cloudfront.net/wp-content/uploads/2024/09/TWILL-PAJAMA-WHITE-400x400.webp",
+        "description": "Classic slim fit jeans for daily wear.",
+        "price": 29.99,
+        "specification": "98% cotton, 2% elastane, mid-rise",
+        "size": ["28", "30", "32", "34", "36"],
+        "availability": true,
+        "rating": 4.6
+      },
+      {
+        "id": 17,
+        "name": "Chino Pants",
+        "category": "Pants",
+        "image": "https://d2m144zuam4eta.cloudfront.net/wp-content/uploads/2024/10/CARGO-JOGGERS-BACK-OLIVE-400x400.webp",
+        "description": "Smart casual chino pants for versatile styling.",
+        "price": 27.49,
+        "specification": "100% cotton, regular fit",
+        "size": ["30", "32", "34", "36", "38"],
+        "availability": false,
+        "rating": 4.4
+      },
+      {
+        "id": 18,
+        "name": "Jogger Pants",
+        "category": "Pants",
+        "image": "https://d2m144zuam4eta.cloudfront.net/wp-content/uploads/2024/10/CARGO-JOGGERS-FRONT-BEIGE-400x400.webp",
+        "description": "Comfortable jogger pants for casual days.",
+        "price": 24.99,
+        "specification": "Cotton blend, elastic waistband",
+        "size": ["S", "M", "L", "XL"],
+        "availability": true,
+        "rating": 4.2
+      },
+      {
+        "id": 19,
+        "name": "Leather Wallet",
+        "category": "Accessories",
+        "image": "https://d2m144zuam4eta.cloudfront.net/wp-content/uploads/2024/11/A046379_1-400x400.webp",
+        "description": "Sleek leather wallet with multiple compartments.",
+        "price": 19.99,
+        "specification": "Genuine leather, compact design",
+        "size": ["One Size"],
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "id": 20,
+        "name": "Sunglasses",
+        "category": "Accessories",
+        "image": "https://d2m144zuam4eta.cloudfront.net/wp-content/uploads/2022/10/Oceania-Mask-400x400.webp",
+        "description": "Trendy sunglasses with UV protection.",
+        "price": 22.99,
+        "specification": "Polarized lenses, lightweight frame",
+        "size": ["One Size"],
+        "availability": true,
+        "rating": 4.5
+      },
+      {
+        "id": 21,
+        "name": "Striped T-Shirt",
+        "category": "T-shirts",
+        "image": "https://d2m144zuam4eta.cloudfront.net/wp-content/uploads/2024/10/CMTHP-COP14-SORRELL-BROWN-400x400.webp",
+        "description": "Casual striped t-shirt perfect for daily wear.",
+        "price": 14.99,
+        "specification": "100% cotton, regular fit",
+        "size": ["S", "M", "L", "XL"],
+        "availability": true,
+        "rating": 4.3
+      },
+      {
+        "id": 22,
+        "name": "Long Sleeve T-Shirt",
+        "category": "T-shirts",
+        "image": "https://d2m144zuam4eta.cloudfront.net/wp-content/uploads/2024/10/CMTHP-COP11-CREAM-400x400.webp",
+        "description": "Comfortable long sleeve t-shirt for cooler days.",
+        "price": 18.99,
+        "specification": "100% cotton, relaxed fit",
+        "size": ["M", "L", "XL", "XXL"],
+        "availability": true,
+        "rating": 4.4
+      },
+      {
+        "id": 23,
+        "name": "Polo T-Shirt",
+        "category": "T-shirts",
+        "image": "https://d2m144zuam4eta.cloudfront.net/wp-content/uploads/2023/02/CMTHP-COD236-MAROON-1-400x400.webp",
+        "description": "Classic polo t-shirt with a refined look.",
+        "price": 20.99,
+        "specification": "Cotton blend, collared design",
+        "size": ["S", "M", "L", "XL", "XXL"],
+        "availability": true,
+        "rating": 4.6
+      },
+      {
+        "id": 24,
+        "name": "Ringer T-Shirt",
+        "category": "T-shirts",
+        "image": "https://d2m144zuam4eta.cloudfront.net/wp-content/uploads/2024/05/CMTHP-COD14-Dark-Gray-400x400.webp",
+        "description": "Retro-style ringer t-shirt with contrasting trim.",
+        "price": 15.49,
+        "specification": "Soft cotton fabric, unique color accents",
+        "size": ["S", "M", "L", "XL"],
+        "availability": true,
+        "rating": 4.2
+      }      
+    
   ]
   
